@@ -1,0 +1,14 @@
+{
+  "verified_utc": "2026-09-06T02:32:22.996368+00:00",
+  "parent_commit": "c59fe3a47de964a2b3f3267130a3c6a64073315a",
+  "script_sha256": "25ed27f6c413e2415841fae2c20e00659c47739c1030bd7efdedec24c8903ef7",
+  "python": "3.14.3 (v3.14.3:323c59a5e34, Feb  3 2026, 11:41:37) [Clang 16.0.0 (clang-1600.0.26.6)]",
+  "source_files_matching_zenodo": 5,
+  "top_level_response_files": 4,
+  "qc_path": "qc/su_2024_quality_check.csv",
+  "all_five_output_contents_identical": true,
+  "records_compared": 898804,
+  "fields_compared": 6291628,
+  "mismatches": 0,
+  "original_files_unchanged": 979
+}

@@ -1,0 +1,5 @@
+dataset,participants,items,rows,compared_fields,missing_cells,median_rt_seconds,min_rt_seconds,max_rt_seconds,zero_rt,min_resp,max_resp
+su_2024_gad7,24292,7,170044,1190308,0,2.2,0.01,5266.93,0,0,3
+su_2024_isi,24292,7,170044,1190308,0,2.65,0.0,6321.19,2,0,4
+su_2024_phq9,24292,9,218628,1530396,0,3.0,0.01,5370.34,0,0,3
+su_2024_pss14,24292,14,340088,2380616,0,3.22,0.01,13768.5,0,1,5
