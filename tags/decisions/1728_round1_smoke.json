@@ -1,0 +1,711 @@
+{
+  "prepared_at": "2026-09-08T21:47:07.508724+00:00",
+  "scope": "provisional mechanism smoke; not a representative sample, formal sweep or rate estimate",
+  "code_commit": "de4155b83d59451b9fc3ecabd161688bbef70521",
+  "runtime_source_sha256": {
+    "__init__.py": "dd8923a9e25d8c70cab1464c1901f5113b963e20701ae329afd6b633f3243f58",
+    "cli.py": "a7636e006c4e0067b4d1d3549db86b7fbe0c8cbc9098e593b30a9ac7c638adde",
+    "core.py": "189f09feb3aefb80ef9919839e9f91df4ee2caf377c3be8bc1c65e5aedf7430f",
+    "extra.py": "d77d2a841d3ce4c512038b49432733bf6684070b76b21b7760ccef70344dc0e1",
+    "model.py": "4d0183d90885b88f0f02f25bedcffd86c8e41cf6ce02e11f091ee37907f48397",
+    "_checks.py": "c55c1bbaccf011a2becdc8acbd355cb8b1eda2f089ba4041e5be23292d1a9208"
+  },
+  "python_version": "3.14.3 (v3.14.3:323c59a5e34, Feb  3 2026, 11:41:37) [Clang 16.0.0 (clang-1600.0.26.6)]",
+  "dependencies": {
+    "pandas": "3.0.5",
+    "numpy": "2.5.2",
+    "pyreadr": null,
+    "pyarrow": "25.0.1"
+  },
+  "cli": "python -m irw_validate.cli TABLE.csv --profile PROFILE --json",
+  "strict": false,
+  "overrides": null,
+  "IRW_COV_RANGE_SEVERITY": "error",
+  "inventory": {
+    "recorded_at": "2026-09-08T21:08:38.312855+00:00",
+    "metadata_listing_complete": true,
+    "listed_tables": 4238,
+    "distinct_exact_names": 4237,
+    "cross_shard_exact_duplicates": {
+      "zhou_2025_peer_relationship": [
+        "datapages.item_response_warehouse_3:5xaj:v5_0.zhou_2025_peer_relationship:dkj3",
+        "datapages.item_response_warehouse_5:3ykx:v2_0.zhou_2025_peer_relationship:mbrw"
+      ]
+    },
+    "casefold_name_collisions": {},
+    "shards": [
+      {
+        "dataset": "item_response_warehouse",
+        "qualified_reference": "datapages.item_response_warehouse:as2e:v51_0",
+        "version": "v51.0",
+        "ordinal_oldest_to_newest": 0,
+        "expected_table_count": 987,
+        "listed_table_count": 987,
+        "status": "complete"
+      },
+      {
+        "dataset": "item_response_warehouse_2",
+        "qualified_reference": "datapages.item_response_warehouse_2:epbx:v15_0",
+        "version": "v15.0",
+        "ordinal_oldest_to_newest": 1,
+        "expected_table_count": 966,
+        "listed_table_count": 966,
+        "status": "complete"
+      },
+      {
+        "dataset": "item_response_warehouse_3",
+        "qualified_reference": "datapages.item_response_warehouse_3:5xaj:v5_0",
+        "version": "v5.0",
+        "ordinal_oldest_to_newest": 2,
+        "expected_table_count": 983,
+        "listed_table_count": 983,
+        "status": "complete"
+      },
+      {
+        "dataset": "item_response_warehouse_4",
+        "qualified_reference": "datapages.item_response_warehouse_4:980f:v6_0",
+        "version": "v6.0",
+        "ordinal_oldest_to_newest": 3,
+        "expected_table_count": 981,
+        "listed_table_count": 981,
+        "status": "complete"
+      },
+      {
+        "dataset": "item_response_warehouse_5",
+        "qualified_reference": "datapages.item_response_warehouse_5:3ykx:v2_0",
+        "version": "v2.0",
+        "ordinal_oldest_to_newest": 4,
+        "expected_table_count": 309,
+        "listed_table_count": 309,
+        "status": "complete"
+      },
+      {
+        "dataset": "item_response_warehouse_6",
+        "qualified_reference": "datapages.item_response_warehouse_6:fpe6:v1_2",
+        "version": "v1.2",
+        "ordinal_oldest_to_newest": 5,
+        "expected_table_count": 12,
+        "listed_table_count": 12,
+        "status": "complete"
+      }
+    ]
+  },
+  "inventory_tables_sha256": "35a7209e9275c74e6246c4a06445a465dbfc6af45a96d981dd195429a542447a",
+  "tables": [
+    {
+      "table": "nguyen_2026_barthel",
+      "published_reference": "datapages.item_response_warehouse_4:980f:v6_0.nguyen_2026_barthel:gyvb",
+      "published_version": "v6.0",
+      "published_table_hash": "71b00fc57cc75627e2154cefd28680e8",
+      "row_count": 3940,
+      "csv_bytes": 71036,
+      "csv_sha256": "b4e4017e3a91f9c5c406e31916e3ec5a4aef4109fd6c1202b62440a5ed35143b",
+      "arrow_sha256": "4686b3ea120bcff45f54c2eb8f041f45bc10c575435577d9419266dccfb0650e",
+      "representation_diagnostic": {
+        "kind": "separate_loader_representation_diagnostic_not_validation",
+        "diagnostic_python": "3.14.3 (v3.14.3:323c59a5e34, Feb  3 2026, 11:41:37) [Clang 16.0.0 (clang-1600.0.26.6)]",
+        "diagnostic_pandas_version": "3.0.5",
+        "diagnostic_pyarrow_version": "25.0.1",
+        "method": "full-row multiset; numeric equality allows 1 and 1.0; strings and numbers remain distinct",
+        "row_order": "not asserted across independent server exports",
+        "source_arrow_schema": "id: int64\nitem: string\nresp: int64",
+        "source_row_count": 3940,
+        "source_columns": [
+          "id",
+          "item",
+          "resp"
+        ],
+        "source_null_counts": {
+          "id": 0,
+          "item": 0,
+          "resp": 0
+        },
+        "source_non_null_nan_counts": {},
+        "source_empty_string_counts": {
+          "id": 0,
+          "item": 0,
+          "resp": 0
+        },
+        "profiles": {
+          "triage": {
+            "row_count": 3940,
+            "columns_equal_in_order": true,
+            "pandas_dtypes": {
+              "id": "int64",
+              "item": "str",
+              "resp": "int64"
+            },
+            "null_counts": {
+              "id": 0,
+              "item": 0,
+              "resp": 0
+            },
+            "null_counts_equal": true,
+            "source_records_absent_or_changed": 0,
+            "parsed_records_additional_or_changed": 0,
+            "full_record_multiset_equal": true
+          },
+          "upload": {
+            "row_count": 3940,
+            "columns_equal_in_order": true,
+            "pandas_dtypes": {
+              "id": "int64",
+              "item": "str",
+              "resp": "int64"
+            },
+            "null_counts": {
+              "id": 0,
+              "item": 0,
+              "resp": 0
+            },
+            "null_counts_equal": true,
+            "source_records_absent_or_changed": 0,
+            "parsed_records_additional_or_changed": 0,
+            "full_record_multiset_equal": true
+          }
+        },
+        "limitation": "equal values do not imply equal storage dtypes; source schema and parsed dtypes are retained separately",
+        "source_variable_index_order_matches": true,
+        "comparison_script_sha256": "1cb81e6a105f647bedf55ac0189dbdd818c7a800854c99e49ada6c5eeda8598f",
+        "recomputed_at": "2026-09-08T21:43:42.934776+00:00",
+        "csv_sha256": "b4e4017e3a91f9c5c406e31916e3ec5a4aef4109fd6c1202b62440a5ed35143b",
+        "arrow_sha256": "4686b3ea120bcff45f54c2eb8f041f45bc10c575435577d9419266dccfb0650e",
+        "diagnostic_matches_cli_python_and_pandas": true
+      }
+    },
+    {
+      "table": "nguyen_2026_mspss",
+      "published_reference": "datapages.item_response_warehouse_4:980f:v6_0.nguyen_2026_mspss:wjg7",
+      "published_version": "v6.0",
+      "published_table_hash": "2dea587aafb259dbd8215b08808009d5",
+      "row_count": 4728,
+      "csv_bytes": 66109,
+      "csv_sha256": "65f7cdb362851c4adbb0804d30c66cbf789aa15b2680f4b8a14caaab1aee6faf",
+      "arrow_sha256": "aa5fd6c59f0fb704b457abca8a40c8d75c48dc4c6b3519e29b9c3813206b1d0d",
+      "representation_diagnostic": {
+        "kind": "separate_loader_representation_diagnostic_not_validation",
+        "diagnostic_python": "3.14.3 (v3.14.3:323c59a5e34, Feb  3 2026, 11:41:37) [Clang 16.0.0 (clang-1600.0.26.6)]",
+        "diagnostic_pandas_version": "3.0.5",
+        "diagnostic_pyarrow_version": "25.0.1",
+        "method": "full-row multiset; numeric equality allows 1 and 1.0; strings and numbers remain distinct",
+        "row_order": "not asserted across independent server exports",
+        "source_arrow_schema": "id: int64\nitem: string\nresp: int64",
+        "source_row_count": 4728,
+        "source_columns": [
+          "id",
+          "item",
+          "resp"
+        ],
+        "source_null_counts": {
+          "id": 0,
+          "item": 0,
+          "resp": 0
+        },
+        "source_non_null_nan_counts": {},
+        "source_empty_string_counts": {
+          "id": 0,
+          "item": 0,
+          "resp": 0
+        },
+        "profiles": {
+          "triage": {
+            "row_count": 4728,
+            "columns_equal_in_order": true,
+            "pandas_dtypes": {
+              "id": "int64",
+              "item": "str",
+              "resp": "int64"
+            },
+            "null_counts": {
+              "id": 0,
+              "item": 0,
+              "resp": 0
+            },
+            "null_counts_equal": true,
+            "source_records_absent_or_changed": 0,
+            "parsed_records_additional_or_changed": 0,
+            "full_record_multiset_equal": true
+          },
+          "upload": {
+            "row_count": 4728,
+            "columns_equal_in_order": true,
+            "pandas_dtypes": {
+              "id": "int64",
+              "item": "str",
+              "resp": "int64"
+            },
+            "null_counts": {
+              "id": 0,
+              "item": 0,
+              "resp": 0
+            },
+            "null_counts_equal": true,
+            "source_records_absent_or_changed": 0,
+            "parsed_records_additional_or_changed": 0,
+            "full_record_multiset_equal": true
+          }
+        },
+        "limitation": "equal values do not imply equal storage dtypes; source schema and parsed dtypes are retained separately",
+        "source_variable_index_order_matches": true,
+        "comparison_script_sha256": "1cb81e6a105f647bedf55ac0189dbdd818c7a800854c99e49ada6c5eeda8598f",
+        "recomputed_at": "2026-09-08T21:43:42.992582+00:00",
+        "csv_sha256": "65f7cdb362851c4adbb0804d30c66cbf789aa15b2680f4b8a14caaab1aee6faf",
+        "arrow_sha256": "aa5fd6c59f0fb704b457abca8a40c8d75c48dc4c6b3519e29b9c3813206b1d0d",
+        "diagnostic_matches_cli_python_and_pandas": true
+      }
+    },
+    {
+      "table": "su_2024_gad7",
+      "published_reference": "datapages.item_response_warehouse_5:3ykx:v2_0.su_2024_gad7:n831",
+      "published_version": "v2.0",
+      "published_table_hash": "501825e794c18c220a62e93fc49366d9",
+      "row_count": 170044,
+      "csv_bytes": 14498753,
+      "csv_sha256": "84538e8a3ebd956411c1efbfd89c2f50ab996d29aace423b0e4f4917e1440f4d",
+      "arrow_sha256": "946a514368d674ccfdeb96de78481612d44a0a4bb4ffc8bc0e8eb71b5f6b31f5",
+      "representation_diagnostic": {
+        "kind": "separate_loader_representation_diagnostic_not_validation",
+        "diagnostic_python": "3.14.3 (v3.14.3:323c59a5e34, Feb  3 2026, 11:41:37) [Clang 16.0.0 (clang-1600.0.26.6)]",
+        "diagnostic_pandas_version": "3.0.5",
+        "diagnostic_pyarrow_version": "25.0.1",
+        "method": "full-row multiset; numeric equality allows 1 and 1.0; strings and numbers remain distinct",
+        "row_order": "not asserted across independent server exports",
+        "source_arrow_schema": "id: int64\nitem: string\nresp: int64\nrt: double\ncov_gender: string\ncov_age: int64\ncov_education: string\ncov_smoking: string\ncov_drinking: string",
+        "source_row_count": 170044,
+        "source_columns": [
+          "id",
+          "item",
+          "resp",
+          "rt",
+          "cov_gender",
+          "cov_age",
+          "cov_education",
+          "cov_smoking",
+          "cov_drinking"
+        ],
+        "source_null_counts": {
+          "id": 0,
+          "item": 0,
+          "resp": 0,
+          "rt": 0,
+          "cov_gender": 0,
+          "cov_age": 0,
+          "cov_education": 0,
+          "cov_smoking": 0,
+          "cov_drinking": 0
+        },
+        "source_non_null_nan_counts": {
+          "rt": 0
+        },
+        "source_empty_string_counts": {
+          "id": 0,
+          "item": 0,
+          "resp": 0,
+          "rt": 0,
+          "cov_gender": 0,
+          "cov_age": 0,
+          "cov_education": 0,
+          "cov_smoking": 0,
+          "cov_drinking": 0
+        },
+        "profiles": {
+          "triage": {
+            "row_count": 170044,
+            "columns_equal_in_order": true,
+            "pandas_dtypes": {
+              "id": "int64",
+              "item": "str",
+              "resp": "int64",
+              "rt": "float64",
+              "cov_gender": "str",
+              "cov_age": "int64",
+              "cov_education": "str",
+              "cov_smoking": "str",
+              "cov_drinking": "str"
+            },
+            "null_counts": {
+              "id": 0,
+              "item": 0,
+              "resp": 0,
+              "rt": 0,
+              "cov_gender": 0,
+              "cov_age": 0,
+              "cov_education": 0,
+              "cov_smoking": 0,
+              "cov_drinking": 0
+            },
+            "null_counts_equal": true,
+            "source_records_absent_or_changed": 0,
+            "parsed_records_additional_or_changed": 0,
+            "full_record_multiset_equal": true
+          },
+          "upload": {
+            "row_count": 170044,
+            "columns_equal_in_order": true,
+            "pandas_dtypes": {
+              "id": "int64",
+              "item": "str",
+              "resp": "int64",
+              "rt": "float64",
+              "cov_gender": "str",
+              "cov_age": "int64",
+              "cov_education": "str",
+              "cov_smoking": "str",
+              "cov_drinking": "str"
+            },
+            "null_counts": {
+              "id": 0,
+              "item": 0,
+              "resp": 0,
+              "rt": 0,
+              "cov_gender": 0,
+              "cov_age": 0,
+              "cov_education": 0,
+              "cov_smoking": 0,
+              "cov_drinking": 0
+            },
+            "null_counts_equal": true,
+            "source_records_absent_or_changed": 0,
+            "parsed_records_additional_or_changed": 0,
+            "full_record_multiset_equal": true
+          }
+        },
+        "limitation": "equal values do not imply equal storage dtypes; source schema and parsed dtypes are retained separately",
+        "source_variable_index_order_matches": true,
+        "comparison_script_sha256": "1cb81e6a105f647bedf55ac0189dbdd818c7a800854c99e49ada6c5eeda8598f",
+        "recomputed_at": "2026-09-08T21:43:47.673997+00:00",
+        "csv_sha256": "84538e8a3ebd956411c1efbfd89c2f50ab996d29aace423b0e4f4917e1440f4d",
+        "arrow_sha256": "946a514368d674ccfdeb96de78481612d44a0a4bb4ffc8bc0e8eb71b5f6b31f5",
+        "diagnostic_matches_cli_python_and_pandas": true
+      }
+    }
+  ],
+  "cli_runs": [
+    {
+      "table": "nguyen_2026_barthel",
+      "profile": "triage",
+      "status": "completed_with_findings",
+      "returncode": 1,
+      "started_at": "2026-09-08T21:35:10.190211+00:00",
+      "ended_at": "2026-09-08T21:35:10.704743+00:00",
+      "elapsed_seconds": 0.5145420000189915,
+      "input_sha256": "b4e4017e3a91f9c5c406e31916e3ec5a4aef4109fd6c1202b62440a5ed35143b",
+      "original_stdout_sha256": "7bc640d33c142db9de7cf9f0a0f49d49a72e9f315e3dcd1a7372576e2464efb5",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": "",
+      "report": {
+        "label": "nguyen_2026_barthel.csv",
+        "profile": "triage",
+        "ok": false,
+        "stats": {
+          "n_responses": 3940,
+          "n_categories": 4,
+          "n_participants": 394,
+          "n_items": 10,
+          "responses_per_participant": 10.0,
+          "responses_per_item": 394.0,
+          "density": 1.0,
+          "resp_distribution": {
+            "0": 207,
+            "5": 990,
+            "10": 2202,
+            "15": 541
+          }
+        },
+        "checks_run": [
+          "required_columns",
+          "resp_numeric",
+          "dup_id_item",
+          "imputed_values*",
+          "resp_scale_mixed"
+        ],
+        "findings": [
+          {
+            "check": "imputed_values*",
+            "severity": "warn",
+            "message": "Item 'bi_anuong' has one resp value accounting for 88% of responses \u2014 possible mean imputation.",
+            "table": "nguyen_2026_barthel",
+            "group": "heuristic"
+          },
+          {
+            "check": "resp_scale_mixed",
+            "severity": "error",
+            "message": "items span more than one response scale: 6 on 0-10 and 2 on ['0-15']. IRW requires one table per construct; split before submitting.",
+            "table": "nguyen_2026_barthel",
+            "group": "heuristic"
+          }
+        ],
+        "overridden": [],
+        "override_reason": null
+      }
+    },
+    {
+      "table": "nguyen_2026_barthel",
+      "profile": "upload",
+      "status": "completed_with_findings",
+      "returncode": 0,
+      "started_at": "2026-09-08T21:35:10.705444+00:00",
+      "ended_at": "2026-09-08T21:35:11.010438+00:00",
+      "elapsed_seconds": 0.30500154200126417,
+      "input_sha256": "b4e4017e3a91f9c5c406e31916e3ec5a4aef4109fd6c1202b62440a5ed35143b",
+      "original_stdout_sha256": "33536d638d7165ac039cce7652e9751814ce4d7c25f19b5bbfd3738ee876024c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": "",
+      "report": {
+        "label": "nguyen_2026_barthel.csv",
+        "profile": "upload",
+        "ok": true,
+        "stats": {
+          "n_responses": 3940,
+          "n_categories": 4,
+          "n_participants": 394,
+          "n_items": 10,
+          "responses_per_participant": 10.0,
+          "responses_per_item": 394.0,
+          "density": 1.0,
+          "resp_distribution": {
+            "0": 207,
+            "5": 990,
+            "10": 2202,
+            "15": 541
+          }
+        },
+        "checks_run": [
+          "required_columns",
+          "resp_numeric",
+          "dup_id_item",
+          "imputed_values*",
+          "resp_scale_mixed"
+        ],
+        "findings": [
+          {
+            "check": "imputed_values*",
+            "severity": "warn",
+            "message": "Item 'bi_anuong' has one resp value accounting for 88% of responses \u2014 possible mean imputation.",
+            "table": "nguyen_2026_barthel",
+            "group": "heuristic"
+          },
+          {
+            "check": "resp_scale_mixed",
+            "severity": "warn",
+            "message": "items span more than one response scale: 6 on 0-10 and 2 on ['0-15']. IRW requires one table per construct; split before submitting.",
+            "table": "nguyen_2026_barthel",
+            "group": "heuristic"
+          }
+        ],
+        "overridden": [],
+        "override_reason": null
+      }
+    },
+    {
+      "table": "nguyen_2026_mspss",
+      "profile": "triage",
+      "status": "completed_with_findings",
+      "returncode": 1,
+      "started_at": "2026-09-08T21:35:11.011491+00:00",
+      "ended_at": "2026-09-08T21:35:11.322440+00:00",
+      "elapsed_seconds": 0.3109550419903826,
+      "input_sha256": "65f7cdb362851c4adbb0804d30c66cbf789aa15b2680f4b8a14caaab1aee6faf",
+      "original_stdout_sha256": "91b53562794780a016417fee19881a9696eeb9ee890b279ca71ab84c1eff174b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": "",
+      "report": {
+        "label": "nguyen_2026_mspss.csv",
+        "profile": "triage",
+        "ok": false,
+        "stats": {
+          "n_responses": 4728,
+          "n_categories": 7,
+          "n_participants": 394,
+          "n_items": 12,
+          "responses_per_participant": 12.0,
+          "responses_per_item": 394.0,
+          "density": 1.0,
+          "resp_distribution": {
+            "1": 4,
+            "2": 45,
+            "3": 279,
+            "4": 913,
+            "5": 1680,
+            "6": 1202,
+            "7": 605
+          }
+        },
+        "checks_run": [
+          "required_columns",
+          "resp_numeric",
+          "dup_id_item",
+          "resp_scale_mixed"
+        ],
+        "findings": [
+          {
+            "check": "resp_scale_mixed",
+            "severity": "error",
+            "message": "items span more than one response scale: 8 on 2-7 and 4 on ['1-7']. IRW requires one table per construct; split before submitting.",
+            "table": "nguyen_2026_mspss",
+            "group": "heuristic"
+          }
+        ],
+        "overridden": [],
+        "override_reason": null
+      }
+    },
+    {
+      "table": "nguyen_2026_mspss",
+      "profile": "upload",
+      "status": "completed_with_findings",
+      "returncode": 0,
+      "started_at": "2026-09-08T21:35:11.323114+00:00",
+      "ended_at": "2026-09-08T21:35:11.635126+00:00",
+      "elapsed_seconds": 0.3120201659912709,
+      "input_sha256": "65f7cdb362851c4adbb0804d30c66cbf789aa15b2680f4b8a14caaab1aee6faf",
+      "original_stdout_sha256": "84ec41362b53da24966c84857caea1b6291bbca8ccaf1ca6c26fd4d2a3818137",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": "",
+      "report": {
+        "label": "nguyen_2026_mspss.csv",
+        "profile": "upload",
+        "ok": true,
+        "stats": {
+          "n_responses": 4728,
+          "n_categories": 7,
+          "n_participants": 394,
+          "n_items": 12,
+          "responses_per_participant": 12.0,
+          "responses_per_item": 394.0,
+          "density": 1.0,
+          "resp_distribution": {
+            "1": 4,
+            "2": 45,
+            "3": 279,
+            "4": 913,
+            "5": 1680,
+            "6": 1202,
+            "7": 605
+          }
+        },
+        "checks_run": [
+          "required_columns",
+          "resp_numeric",
+          "dup_id_item",
+          "resp_scale_mixed"
+        ],
+        "findings": [
+          {
+            "check": "resp_scale_mixed",
+            "severity": "warn",
+            "message": "items span more than one response scale: 8 on 2-7 and 4 on ['1-7']. IRW requires one table per construct; split before submitting.",
+            "table": "nguyen_2026_mspss",
+            "group": "heuristic"
+          }
+        ],
+        "overridden": [],
+        "override_reason": null
+      }
+    },
+    {
+      "table": "su_2024_gad7",
+      "profile": "triage",
+      "status": "completed_with_findings",
+      "returncode": 0,
+      "started_at": "2026-09-08T21:35:11.644050+00:00",
+      "ended_at": "2026-09-08T21:35:12.321983+00:00",
+      "elapsed_seconds": 0.6779382090026047,
+      "input_sha256": "84538e8a3ebd956411c1efbfd89c2f50ab996d29aace423b0e4f4917e1440f4d",
+      "original_stdout_sha256": "5cb2dd0dd087eb5dd1cf58273810fef79fefae54dff66a7f1352396a9a0a1f3c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": "",
+      "report": {
+        "label": "su_2024_gad7.csv",
+        "profile": "triage",
+        "ok": true,
+        "stats": {
+          "n_responses": 170044,
+          "n_categories": 4,
+          "n_participants": 24292,
+          "n_items": 7,
+          "responses_per_participant": 7.0,
+          "responses_per_item": 24292.0,
+          "density": 1.0,
+          "resp_distribution": {
+            "0": 129074,
+            "1": 36898,
+            "2": 2616,
+            "3": 1456
+          }
+        },
+        "checks_run": [
+          "required_columns",
+          "resp_numeric",
+          "dup_id_item",
+          "imputed_values*"
+        ],
+        "findings": [
+          {
+            "check": "imputed_values*",
+            "severity": "warn",
+            "message": "Item 'GAD_1' has one resp value accounting for 65% of responses \u2014 possible mean imputation.",
+            "table": "su_2024_gad7",
+            "group": "heuristic"
+          }
+        ],
+        "overridden": [],
+        "override_reason": null
+      }
+    },
+    {
+      "table": "su_2024_gad7",
+      "profile": "upload",
+      "status": "completed_with_findings",
+      "returncode": 0,
+      "started_at": "2026-09-08T21:35:12.334273+00:00",
+      "ended_at": "2026-09-08T21:35:13.181073+00:00",
+      "elapsed_seconds": 0.8468019999854732,
+      "input_sha256": "84538e8a3ebd956411c1efbfd89c2f50ab996d29aace423b0e4f4917e1440f4d",
+      "original_stdout_sha256": "888b7c5baa861bbaf6a249abed7ba183399523a466af5439897b9fe826586edb",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": "",
+      "report": {
+        "label": "su_2024_gad7.csv",
+        "profile": "upload",
+        "ok": true,
+        "stats": {
+          "n_responses": 170044,
+          "n_categories": 4,
+          "n_participants": 24292,
+          "n_items": 7,
+          "responses_per_participant": 7.0,
+          "responses_per_item": 24292.0,
+          "density": 1.0,
+          "resp_distribution": {
+            "0": 129074,
+            "1": 36898,
+            "2": 2616,
+            "3": 1456
+          }
+        },
+        "checks_run": [
+          "required_columns",
+          "resp_numeric",
+          "dup_id_item",
+          "imputed_values*"
+        ],
+        "findings": [
+          {
+            "check": "imputed_values*",
+            "severity": "warn",
+            "message": "Item 'GAD_1' has one resp value accounting for 65% of responses \u2014 possible mean imputation.",
+            "table": "su_2024_gad7",
+            "group": "heuristic"
+          }
+        ],
+        "overridden": [],
+        "override_reason": null
+      }
+    }
+  ],
+  "public_redaction": "CLI report label is reduced to the CSV basename; all other report fields are retained. Local paths and response rows are not published.",
+  "human_labels_assigned": 0,
+  "rate_estimates": null,
+  "pending": "Ben's formal version stamp and check-list confirmation"
+}
